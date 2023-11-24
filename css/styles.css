@@ -1,0 +1,312 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Vina+Sans&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Agbalumo', sans-serif;
+}
+
+body{
+    width: 100%;
+    min-width: 100hv;
+    background: url(../img/Background/fondo.jpg);
+}
+
+section{
+    width: 90%;
+    margin: 100px auto;
+    border: 2px solid#d7a013;
+    background: #0015267c;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h2{
+    color: #979797;
+    font-size: 30px;
+    padding: 20px;
+}
+
+.left,
+.right{
+    width: 50%;
+    text-align: center;
+    border: 1px solid #d7a013;
+    padding: 15px;
+}
+
+button{
+    padding: 10px 30px;
+    background: #001526;
+    color: #d7a013;
+    font-size: 22px;
+    border-radius:  0 20px 0 20px;
+    border: 1px solid #fff;
+    cursor: pointer;
+    transition: .4s;
+    margin-bottom: 30px;
+    margin-right: 30px;
+}
+
+button:hover{
+    border-radius: 20px 0 20px 0;
+    background-color: #000;
+    color: #d7a013;
+}
+
+#figura{
+    width: 200px;
+    height: 200px;
+    background: #27005d;
+    border: 2px solid #d7a013 ;
+    margin: 40px auto;
+    transition: 1.0s;
+}
+
+#figura.circulo{
+    border-radius: 100%;
+    background: #fff;
+    border: 2px solid #d7a013;
+    box-shadow: 5px 0px 5px 0px #d7a013;
+    transition: 1.0s;
+    transform: rotate3d(1, 1, 1, 360deg);
+}
+
+
+#figura.rectangulo{
+
+    width: 500px;
+    transition: 1.0s;
+    background: #fff;
+    transform: rotate3d(1, 1, 1, 360deg);
+}
+
+#figura.rombo{
+
+    width: 0;
+    height: 0;
+    border-width: 200px 100px 0 100px;
+    transform: rotate(45deg);
+    
+    
+}
+
+#figura.imagen{
+    width: 410px;
+    height: 400px;
+    background-image: url(../img/img-figura/warship.jpg);
+    background-repeat: no-repeat;
+
+    
+}
+
+#figura.gif{ 
+    background-size: cover;
+    background-image: url('../img/gifs/gifs1.gif');
+}
+
+#figura.triangulo{
+
+    background: transparent;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent; 
+    border-top: 100px solid transparent;
+    border-right: 100px solid transparent; 
+    border-bottom: 100px solid #fff;
+    
+    
+}
+
+#figura.hoja{
+    width: 250px;
+    height: 100px;
+    -moz-border-radius: 0 50% / 0 100%;
+    -webkit-border-radius: 0 50% / 0 100%;
+    border-radius: 0 50% / 0 100%;
+    background: #5cb85c;
+    border: 3px solid #555;
+
+    
+}
+
+#figura.pacman{
+    background: transparent;
+    width:0; 
+    height:0; 
+    border-right: 50px solid transparent; 
+    border-top: 50px solid yellow; 
+    border-left: 50px solid yellow; 
+    border-bottom: 50px solid yellow; 
+    -moz-border-radius: 100%; 
+    -webkit-border-radius: 100%; 
+    border-radius: 100%;
+    
+}
+
+#figura.luna{
+    border: none;
+    background: transparent;
+    width: 100px;
+    height: 100px;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    border-radius: 50%;
+    -moz-box-shadow: 30px 10px 0 #fff;
+    -webkit-box-shadow: 30px 10px 0 #fff;
+    box-shadow: 30px 10px 0 #fff;
+    
+}
+
+#figura.huevo{
+    width: 126px;
+    height: 180px;
+    background-color: orange;
+    -moz-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    -webkit-border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+    border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
+}
+
+#figura.trapecio{
+    background: transparent;
+    width: 500px;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-left: 100px solid transparent;
+    border-bottom: 250px solid aqua; 
+}
+
+
+#figura.moveTop{
+    transform: translateY(-50px);
+}
+
+#figura.moveLeft{
+    transform: translatex(-50px);
+}
+
+#figura.moveBottom{
+    transform: translateY(50px);
+}
+
+#figura.moveRight{
+    transform: translatex(50px);
+}
+
+.bodyBackground{
+    background: url(../img/Background/astronomia.jpg);
+    background-size: cover;
+} 
+
+
+
+#figura.miPropuesta{
+    background: white;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 100px solid #f00; 
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin: 50px;
+}
+
+
+/*-------------------PANEL SUPERIOR------------------*/
+.panel-superior{
+    position: absolute;
+    z-index: 9;
+    top: -2000px;
+    left: 40%;
+    width: 400px;
+    background: #979797;
+    text-align: center;
+    padding: 60px 30px;
+    height: 100vh;
+    transition: 1s;
+}
+
+.panel-superior.active{
+    top: 0;
+}
+
+.panel-superior h2{
+    color: #d7a013;
+}
+
+.panel-superior a{
+    background: #001526;
+    color: #d7a013;
+    padding: 8px 20px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    text-decoration: none;
+    transition: -4s;
+}
+
+.panel-superior a:hover{
+    transform: scale(1.07);
+}
+
+.panel-superior a.close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: transparent;
+    color: #000;
+    font-size: 22px;
+}
+/*------------------PANEL SUPERIOR---------------------*/
+
+
+/*-------------------PANEL LATERAL------------------*/
+.panel-lateral{
+    position: absolute;
+    z-index: 9;
+    top: 0;
+    left: -450px;
+    width: 400px;
+    background: #979797;
+    text-align: center;
+    padding: 60px 30px;
+    height: 100vh;
+    transition: 1s;
+}
+
+.panel-lateral.active{
+    left: 0;
+}
+
+.panel-lateral h2{
+    color: #d7a013;
+}
+
+.panel-lateral a{
+    background: #001526;
+    color: #d7a013;
+    padding: 8px 20px;
+    display: block;
+    text-align: center;
+    margin: 15px 0;
+    text-decoration: none;
+    transition: -4s;
+}
+
+.panel-lateral a:hover{
+    transform: scale(1.07);
+}
+
+.panel-lateral a.close{
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    background: transparent;
+    color: #000;
+    font-size: 22px;
+}
+
+/*------------------PANEL LATERAL---------------------*/

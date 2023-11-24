@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interacciones JavaScript + Html + Css</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body id="bodyBackground">
+
+    <section>
+        
+        <div class="panel-lateral">
+
+            <a href="#"  onclick="panelLateral()" class="close">X</a>
+            
+            <h2>MENU PRINCIPAL</h2>
+
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Tienda</a>
+                <a href="#">Servicios</a>
+                <a href="#">Nosotros</a>
+            </ul>
+
+        </div>
+        <div class="panel-superior">
+
+            <a href="#" onclick="panelSuperior()" class="close">X</a>
+            
+            <h2>MENU PRINCIPAL</h2>
+
+            <ul>
+                <a href="#">Inicio</a>
+                <a href="#">Nosotros</a>
+                <a href="#">Tienda</a>
+                <a href="#">Servicios</a>
+                <a href="#">Nosotros</a>
+            </ul>
+
+        </div>
+        <div class="left">
+            <h2>Interacciones</h2>
+            <button onclick="circulo()">CIRCULO</button>
+            <button onclick="rectangulo()">RECTANGULO</button>
+            <button onclick="rombo()">ROMBO</button>
+            <button onclick="imagen()">IMAGEN</button>
+            <button onclick="gif()">GIF</button>
+            <button onclick="triangulo()">TRIANGULO</button>
+            <button onclick="hoja()">HOJA</button>
+            <button onclick="pacman()">PACMAN</button>
+            <button onclick="luna()">LUNA</button>
+            <button onclick="huevo()">HUEVO</button>
+            <button onclick="trapecio()">TRAPECIO</button>
+            <button onclick="moveTop()">MOVE TOP</button>
+            <button onclick="moveLeft()">MOVE LEFT</button>
+            <button onclick="moveBottom()">MOVE BOTTOM</button>
+            <button onclick="moveRight()">MOVE RIGHT</button>
+            <button onclick="panelSuperior()">PANEL SUPERIOR</button>
+            <button onclick="fondo()">IMAGEN DE FONDO</button>
+            <button onclick="panelLateral()">PANEL LATERAL</button>
+            <button onclick="miPropuesta()">MI PROPUESTA</button>
+        </div>
+        <div class="right">
+            <h2 class="mensaje" id="message">Figura</h2>
+            <div id="figura"></div>
+        </div>
+    </section>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
